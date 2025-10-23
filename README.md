@@ -74,72 +74,10 @@ matplotlib >= 3.7
 seaborn >= 0.12
 ```
 
-## Uso del Modelo
-
-### Cargar modelo entrenado
-
-```python
-from modelo.hybrid_model import HybridCOVIDModel
-from modelo.config import HybridConfig
-
-config = HybridConfig()
-model = HybridCOVIDModel(config=config)
-
-# Cargar pesos
-model.load(
-    path_prefix='./modelos/hybrid_covid_model_completo',
-    input_size=4,
-    output_size=7
-)
-
-# Realizar predicciones
-predictions, regimes = model.predict(X_test)
-```
-
 ### Entrenar desde cero
 
 Consultar el notebook `notebooks/MODELO_HIBRIDO_COMPLETO.ipynb` para un ejemplo completo de entrenamiento.
 
-## Resultados Principales
-
-El modelo híbrido alcanza las siguientes métricas en el conjunto de test:
-
-- **Accuracy de clasificación**: 85.2% global
-  - Bajada: 87.3%
-  - Estable: 91.2%
-  - Subida: 68.7%
-
-- **Predicción de magnitud**:
-  - MAE: 0.0437
-  - RMSE: 0.0812
-  - Direction Accuracy: 76.8%
-
-- **Análisis de transiciones**:
-  - Accuracy en continuaciones: 94.6%
-  - Accuracy en transiciones: 40.1%
-
-## Dataset
-
-Los datos utilizados provienen del repositorio **Our World in Data (OWID)**, que recopila datos epidemiológicos de COVID-19 de más de 200 países. Las variables principales son:
-
-- `new_cases_smoothed_per_million` (variable objetivo)
-- `new_deaths_smoothed_per_million`
-- `reproduction_rate`
-- `positive_rate`
-
-## Estructura de la Memoria
-
-La memoria del TFM se compone de 5 capítulos:
-
-1. **Introducción**: Contexto, motivación y objetivos
-2. **Estado del Arte**: Fundamentos teóricos y trabajos previos
-3. **Datos y Análisis Exploratorio**: Descripción del dataset y selección de variables
-4. **Metodología**: Arquitectura del modelo híbrido y técnicas empleadas
-5. **Resultados**: Evaluación exhaustiva y análisis de rendimiento
-
-## Autor
-
-Trabajo Fin de Máster desarrollado como parte del Máster en Ciencia de Datos.
 
 ## Licencia
 
