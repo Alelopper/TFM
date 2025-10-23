@@ -1,0 +1,20 @@
+{
+  "overall": {
+    "accuracy": 86.64485780462762,
+    "n_samples": 41879
+  },
+  "transitions": {
+    "n_transitions": 4369,
+    "transition_ratio": 10.432436304591802,
+    "accuracy": 44.12909132524605
+  },
+  "continuations": {
+    "n_continuations": 37510,
+    "continuation_ratio": 89.5675636954082,
+    "accuracy": 91.59690749133564
+  },
+  "by_transition_type": [
+    {
+      "from": "Subida",
+      "to": "Estable",
+      "n": 

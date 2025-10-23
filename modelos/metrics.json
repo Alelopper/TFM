@@ -1,0 +1,38 @@
+{
+  "direction_accuracy": 81.2551351774326,
+  "mae_global": 0.08038969439435441,
+  "rmse_global": 0.3279201546796599,
+  "classifier_metrics": {
+    "accuracy": 94.71810321217575,
+    "class_accuracies": {
+      "Bajada": 67.61750405186385,
+      "Estable": 98.47602352408957,
+      "Subida": 30.917366946778714
+    },
+    "confusion_matrix": [
+      [
+        2086,
+        821,
+        178
+      ],
+      [
+        652,
+        69658,
+        426
+      ],
+      [
+        342,
+        1631,
+        883
+      ]
+    ]
+  },
+  "predictor_metrics": {
+    "mae_global": 0.08038969439435441,
+    "mae_by_regime": {
+      "bajada": 0.6217861254655372,
+      "estable": 0.04576883582967529,
+      "subida": 0.6378941351473915
+    }
+  }
+}

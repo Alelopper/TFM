@@ -1,0 +1,47 @@
+{
+  "direction_accuracy": 87.60965690099547,
+  "mae_global": 0.030873663973270436,
+  "rmse_global": 0.09766742687179213,
+  "classifier_metrics": {
+    "accuracy": 86.4935801943676,
+    "class_accuracies": {
+      "Bajada": 84.62723351817621,
+      "Estable": 87.37461768671687,
+      "Subida": 83.77225519287835
+    },
+    "confusion_matrix": [
+      [
+        5494,
+        210,
+        788
+      ],
+      [
+        1847,
+        26568,
+        1992
+      ],
+      [
+        659,
+        216,
+        4517
+      ]
+    ],
+    "n_transitions": 6237,
+    "n_continuations": 36054,
+    "transition_accuracy": 39.81080647747314,
+    "continuation_accuracy": 94.5692572252732,
+    "transition_class_accuracies": {
+      "Bajada": 56.352261790182865,
+      "Estable": 11.11111111111111,
+      "Subida": 58.06629834254144
+    }
+  },
+  "predictor_metrics": {
+    "mae_global": 0.030873663973270436,
+    "mae_by_regime": {
+      "bajada": 0.06554826764031896,
+      "estable": 0.004581085680262458,
+      "subida": 0.09012335961600985
+    }
+  }
+}
